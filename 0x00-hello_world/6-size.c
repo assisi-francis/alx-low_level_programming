@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * Description: prints the size of various types of the computer it is compiled
- * and run on
+ * Description: prints the size of various types based on
+ * the computer it is compiled and run oon
  *
  * Return: Always 0 (Success)
  */
