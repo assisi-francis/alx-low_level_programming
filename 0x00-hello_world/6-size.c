@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - print the size of various types
+ * main - Entry point
  *
  * Description: prints the size of various types of the computer it is compiled
  * and run on
