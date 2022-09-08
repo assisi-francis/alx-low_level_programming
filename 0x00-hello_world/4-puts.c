@@ -2,7 +2,6 @@
 int main ()
 {
 
-	char my_words[]="Programming is like building a multilingual puzzle";
-	puts(my_words);
-	return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
