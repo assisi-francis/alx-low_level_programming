@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Print single digits of base 
+ * Description: Print single digits of base
  *
  * Return: Always 0 (Success)
  */
