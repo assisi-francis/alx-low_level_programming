@@ -5,7 +5,7 @@
  *
  * Description: Prints combination of digits
  *
- * Entry: Always 0 (SUccess)
+ * Return: Always 0 (SUccess)
  */
 
 int main(void)
