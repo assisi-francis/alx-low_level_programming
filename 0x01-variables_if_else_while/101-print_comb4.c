@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints 3 numbers combination
+ * Description: Prints numbers combination
  *
  * Return: Always 0 (Success)
  */
@@ -42,3 +42,4 @@ int main(void)
 	putchar(10);
 
 	return (0);
+}
