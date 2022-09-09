@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main: Entry point print the letters of the alphabet
+ * main - Entry point print the letters of the alphabet
  *
  * Description: print the letters of the alphabet in lower then in uppercase
  *
