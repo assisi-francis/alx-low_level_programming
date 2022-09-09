@@ -23,7 +23,7 @@ int main(void)
 		{
 			putchar(i - 10 + 'A');
 		}
-		i++
+		i++;
 	}
 	putchar(10);
 
