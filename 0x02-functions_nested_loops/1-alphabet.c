@@ -3,6 +3,8 @@
 /**
  * print_alphabet: prints alphabet
  *
+ * Description: prints alphabets in small letters
+ *
  * Return: Always 0 (success)
  */
 
