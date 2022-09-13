@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - prints alphabets 10 times
- nti*
+ *
  * Return: Always 0 (succes)
  */
 
