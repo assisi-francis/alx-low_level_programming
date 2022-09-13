@@ -3,6 +3,8 @@
 /**
  * print_alphabet - prints alphabets 10 times
  *
+ * Description: Prints alphabets
+ *
  * Return: Always 0 (succes)
  */
 
