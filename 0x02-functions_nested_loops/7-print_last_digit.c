@@ -5,12 +5,13 @@
  *
  * @n: number being tested
  *
- * return: Always 0
+ * Return: Integer
  */
 
 int print_last_digit(int n)
 {
 	int last;
+
 	last = n % 10;
 	if (n < 0)
 	{
