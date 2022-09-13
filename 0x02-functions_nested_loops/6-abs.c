@@ -3,9 +3,9 @@
 /**
  * _abs - computes absolute value of integrer
  *
- * @n - n is an integer
+ * @n: n is an integer
  *
- * Return 1 positive -1 negative o is 0
+ * Return: 1 positive -1 negative o is 0
  */
 
 int _abs(int n)
