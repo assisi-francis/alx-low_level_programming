@@ -2,14 +2,14 @@
 
 /**
  * print_alphabet - prints alphabets 10 times
- *
+ nti*
  * Return: Always 0 (succes)
  */
 
 void print_alphabet_x10(void)
 {
 	int i;
-	char j;
+	int j;
 
 	for (i = 0; i <= 9; i++)
 	{
