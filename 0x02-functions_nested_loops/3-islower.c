@@ -5,7 +5,7 @@
  *
  * Description: checks for lowercase letetrs
  *
- * Return: Always 0
+ * Return: Always 0 (Success)
  */
 
 int _islower(int c)
