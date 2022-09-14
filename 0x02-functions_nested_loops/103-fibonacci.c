@@ -20,7 +20,7 @@ int main(void)
 	while (sum < 4000000)
 	{
 		sum = first + second;
-		if (sum % 2 === 0)
+		if (sum % 2 == 0)
 		{
 			total_sum += sum;
 		}
