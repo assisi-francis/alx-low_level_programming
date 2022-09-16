@@ -3,9 +3,7 @@
 /**
  * print_diagonal - print diagonal line in the terminal
  * 
- * @n: input integer
- *
- * Return: void
+ * @n: the number of \ characters to be printed
  */
 
 
