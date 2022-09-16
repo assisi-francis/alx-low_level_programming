@@ -2,6 +2,7 @@
 
 /**
  * print_diagonal - print diagonal line in the terminal
+ * 
  * @n: input integer
  *
  * Return: void
