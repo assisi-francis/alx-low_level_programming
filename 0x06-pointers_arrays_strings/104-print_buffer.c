@@ -5,7 +5,7 @@
  * print_buffer - prints a buffer
  * @b: buffer
  * @size: size of buffer
- * Return: no return
+ * Return: void
  */
 
 void print_buffer(char *b, int size)
@@ -26,16 +26,17 @@ void print_buffer(char *b, int size)
 				if (k < size)
 					printf("%.2x", *(b + k));
 				else
-					printf("  ");
+					printf(" ");
 			}
 			printf(" ");
-			for (l = j; l < j + 10; l++)					{
+			for (l = j; l < j + 10; l++)
+			{
 				if (l >= size)
 					break;
 				if (*(b + l) < 32 || *(b + l) > 126)
 					printf("%c", '.');
 				else
-					printf("%c", *(b + l);
+					printf("%c", *(b + l));
 			}
 			printf("\n");
 		}
