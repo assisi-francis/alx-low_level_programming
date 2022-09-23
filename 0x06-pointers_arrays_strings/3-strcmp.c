@@ -5,9 +5,8 @@
  * @s1: A pointer to the first string to be compared
  * @s2: A pointer to the second string to be compared
  *
- * Return: If str1 < str2, negative differece
- * 	if str1 == str2, 0.
- * 	if str1 > str2, the positve difference of the first
+ * Return: 0 if s1 and s2 are equal
+ * another number if not
  */
 
 int _strcmp(char *s1, char *s2)
@@ -23,7 +22,6 @@ int _strcmp(char *s1, char *s2)
 	}
 	if (s1[i] == s2[i])
 		return (0);
-
 
 	return (s1[i] - s2[i]);
 }
