@@ -4,7 +4,7 @@
  * infinite_add - adds two numbers
  * @n1: number one
  * @n2: number two
- * @r: buffer to useto store result
+ * @r: buffer to use and store result
  * @size_r: buffer size
  * Return: the pointer to dest
  */
