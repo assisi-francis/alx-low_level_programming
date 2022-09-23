@@ -7,7 +7,7 @@
  * @n2: number two
  * @r: buffer to use and store result
  * @size_r: buffer size
- * 
+ *
  * Return: the pointer to dest
  */
 
@@ -17,7 +17,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	while (*(n1 + c1) != '\0')
 		c1++;
-	while (*(n2 +c2) != '\0')
+	while (*(n2 + c2) != '\0')
 		c2++;
 	if (c1 >= c2)
 		bg = c1;
@@ -32,7 +32,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (bg >= 0)
 	{
 		op = dr1 + dr2 + add;
-
 		if (op >= 10)
 			add = op / 10;
 		else
@@ -49,10 +48,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			c2--, dr2 = *(n2 + c2) - 48;
 		else
 			dr2 = 0;
-
 		bg--, size_r--;
 	}
-
 	if (*(r) == '0')
 		return (r + 1);
 	else
