@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * infinite_add - adds two numbers
+ * infinite_add - adds 2 numbers
  *
  * @n1: number one
  * @n2: number two
