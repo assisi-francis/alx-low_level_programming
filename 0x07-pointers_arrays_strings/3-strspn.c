@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.>
+#include <stdio.h>
 
 /**
  * _strspn - gets the length of a prefix
  * @s: string
- * @acept: source
+ * @accept: source
  * Return: number of bytes in the initial segment of the string
  */
 
