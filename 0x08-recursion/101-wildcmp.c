@@ -41,10 +41,10 @@ void iterate_wild(char **wildstr)
 }
 
 /**
- * postfix_match - checks str matches
+ * postfix_match - checks string matches
  * @str: the string to be matched
  * @postfix: the postfix
- * return: reversed string
+ * Return: string
  */
 char *postfix_match(char *str, char *postfix)
 {
@@ -74,7 +74,7 @@ int wildcmp(char *s1, char *s2)
 	if (*s2 == '*')
 	{
 		iterate_wild(&s2);
-		s2 = postfix_match (s1, s2);
+		s2 = postfix_match(s1, s2);
 	}
 	if (*s2 == '\0')
 		return (1);
