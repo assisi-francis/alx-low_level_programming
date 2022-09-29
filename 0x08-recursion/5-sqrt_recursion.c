@@ -25,7 +25,7 @@ int check_int(int square, int x)
  * Return: int square root, if none returns -1
  */
 
-int _sqt_recursion(int n)
+int _sqrt_recursion(int n)
 {
 	int start;
 
