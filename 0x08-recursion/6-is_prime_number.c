@@ -3,7 +3,7 @@
 /**
  * is_prime - finds out if a given input is prime number
  * @n: input numer
- * @c: iterator
+ * @i: iterator
  * Return: 1 if n is prime 0 if n is not
  */
 int is_prime(unsigned int n, unsigned int i)
