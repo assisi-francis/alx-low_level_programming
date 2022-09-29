@@ -66,7 +66,7 @@ char *postfix_match(char *str, char *postfix)
  * wildcmp - Compare two strings
  * @s1: the first string
  * @s2: the second string
- * return: 1 if idental and u
+ * Return: 1 if idental and u
  */
 
 int wildcmp(char *s1, char *s2)
