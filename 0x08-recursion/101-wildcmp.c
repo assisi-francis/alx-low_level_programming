@@ -2,7 +2,7 @@
 
 int strlen_no_wilds(char *str);
 void iterate_wild(char **wildstr);
-char *postfix_,atch(char *str, char *postfix);
+char *postfix_match(char *str, char *postfix);
 int wildcmp(char *s1, char *s2);
 
 /**
@@ -62,9 +62,10 @@ char *postfix_match(char *str, char *postfix)
 	return (postfix);
 }
 
-/**wildcmp - Compare two strings
- * @n1: the first string
- * @s: the second string
+/**
+ * wildcmp - Compare two strings
+ * @s1: the first string
+ * @s2: the second string
  * return: 1 if idental and u
  */
 
@@ -73,12 +74,13 @@ int wildcmp(char *s1, char *s2)
 	if (*s2 == '*')
 	{
 		iterate_wild(&s2);
-		s2 = posfix_match (s1, s2)
+		s2 = postfix_match (s1, s2);
 	}
 	if (*s2 == '\0')
 		return (1);
+
 	if (*s1 != *s2)
 		return (0);
-	return (wildcmp(++s1, ++s2;
-}
 
+	return (wildcmp(++s1, ++s2));
+}
