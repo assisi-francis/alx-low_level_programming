@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * maon - entry point
+ * main - entry point
  * @argc: number of arguments
  * @argv: array of arguments
  * Return: Always 0
