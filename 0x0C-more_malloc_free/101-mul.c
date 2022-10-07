@@ -157,6 +157,17 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		next_len--;
 	}
 
+	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
+	{
+		num = (*next_prod - '0');
+		num += tens;
+		*final_prod = (num % 10) + '0';
+		tens = num / 10;
+
+		final _prod--;
+		next_prod--;
+	}
+
 	if (tens)
 		*final_prod = (tens % 10) + '0';
 }
