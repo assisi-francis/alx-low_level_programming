@@ -133,7 +133,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  * add_nums - adds the numbers stored in two strings
  * @final_prod: the buffer storing the running final product
  * @next_prod: the next product to be added
- * @net_len: the length of the next prod
+ * @next_len: the length of the next prod
  * Return: void
  */
 void add_nums(char *final_prod, char *next_prod, int next_len)
@@ -170,7 +170,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
  *
  * Return: Always 0
  */
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
 	int size, index, digit, zeroes = 0;
