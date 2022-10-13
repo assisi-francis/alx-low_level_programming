@@ -62,12 +62,11 @@ void print_all(const char * const format, ...)
 	char *s1 = "";
 	char *s2 = ", ";
 
-	print_t ops[] = {
+	op_t ops[] = {
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
-		{'s', print_string},
-		{'\0', NULL}
+		{'s', print_string}
 	};
 
 	va_start(args, format);
