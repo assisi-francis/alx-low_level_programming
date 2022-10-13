@@ -66,7 +66,8 @@ void print_all(const char * const format, ...)
 		{'c', print_char},
 		{'i', print_int},
 		{'f', print_float},
-		{'s', print_string}
+		{'s', print_string},
+		{NULL, NULL}
 	};
 
 	va_start(args, format);
@@ -81,6 +82,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s1);
 				ops[j].f(args);
 				s1 = s2;
+				break;
 			}
 			j++;
 		}
