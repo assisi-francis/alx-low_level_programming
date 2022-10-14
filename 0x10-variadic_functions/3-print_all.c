@@ -3,22 +3,16 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-void print_char(va_list arg);
-void print_int(va_list arg);
-void print_float(va_list arg);
-void print_string(va_list arg);
-void print_all(const char * const format, ...);
-
 /**
  * print_char - print char
  * @args: list of arguments
  */
 
-void print_char(va_list arg)
+void print_char(va_list args)
 {
 	char letter;
 
-	letter = va_arg(arg, int);
+	letter = va_arg(args, int);
 	printf("%c", letter);
 }
 
@@ -27,11 +21,11 @@ void print_char(va_list arg)
  * @args: list of arguments
  */
 
-void print_int(va_list arg)
+void print_int(va_list args)
 {
 	int num;
 
-	num = va_arg(arg, int);
+	num = va_arg(args, int);
 	printf("%d", num);
 }
 
@@ -40,11 +34,11 @@ void print_int(va_list arg)
  * @args: list of arguments
  */
 
-void print_float(va_list arg)
+void print_float(va_list args)
 {
 	float num;
 
-	num = va_arg(arg, double);
+	num = va_arg(args, double);
 	printf("%f", num);
 }
 
@@ -53,11 +47,11 @@ void print_float(va_list arg)
  * @args: list of arguments
  */
 
-void print_string(va_list arg)
+void print_string(va_list args)
 {
 	char *str;
 
-	str = va_arg(arg, char *);
+	str = va_arg(args, char *);
 
 	if (str == NULL)
 	{
