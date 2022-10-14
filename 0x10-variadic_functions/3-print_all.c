@@ -10,10 +10,7 @@
 
 void print_char(va_list args)
 {
-	char letter;
-
-	letter = va_arg(args, int);
-	printf("%c", letter);
+	printf("%c", va_arg(args, int));
 }
 
 /**
@@ -23,10 +20,7 @@ void print_char(va_list args)
 
 void print_int(va_list args)
 {
-	int num;
-
-	num = va_arg(args, int);
-	printf("%d", num);
+	printf("%d", va_arg(args, int));
 }
 
 /**
@@ -36,10 +30,7 @@ void print_int(va_list args)
 
 void print_float(va_list args)
 {
-	float num;
-
-	num = va_arg(args, double);
-	printf("%f", num);
+	printf("%f", va_arg(args, double);
 }
 
 /**
@@ -69,29 +60,33 @@ void print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j = 0;
-	char *separator = "";
+	int i, j;
+	char *s1 = "";
+	char *s2 = ", ";
+
 	op_t ops[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string}
+		{"s", print_string},
+		{'\0', NULL}
 	};
 
 	va_start(args, format);
-
-	while (format && (*(format + i)))
+	i = 0;
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 
-		while (j < 4 && (*(format + i) != *(ops[j].c)))
-			j++;
-
-		if (j < 4)
+		while (ops[j].c != '\0')
 		{
-			printf("%s", separator);
-			ops[j].f(args);
-			separator = ", ";
+			if (ops[j].c == format[i])
+			{
+				printf("%s", s1);
+				ops[j].f(args);
+				s1 = s2;
+			}
+			j++;
 		}
 		i++;
 	}
